@@ -150,6 +150,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl:32 \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.5:64 \
+    android.hardware.camera.provider@2.6:64 \
     libdng_sdk.vendor \
     vendor.qti.hardware.camera.device@1.0:64 \
     libcamera_sdm660_shim \
@@ -175,7 +176,8 @@ PRODUCT_PACKAGES += \
     libtinyxml \
     libtinyxml.vendor \
     libqdMetaData \
-    libqdMetaData.system
+    libqdMetaData.system \
+    libqdMetaData.vendor
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0_32 \
@@ -219,7 +221,9 @@ PRODUCT_COPY_FILES += \
 # fwk-detect
 PRODUCT_PACKAGES += \
     libqti_vndfwk_detect \
-    libqti_vndfwk_detect.vendor
+    libqti_vndfwk_detect.vendor \
+    libvndfwk_detect_jni.qti \
+    libvndfwk_detect_jni.qti.vendor
 
 # Gatekeeper
 PRODUCT_PACKAGES += \
@@ -373,12 +377,11 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    android.hardware.radio@1.4.vendor \
-    android.hardware.radio.config@1.2.vendor \
-    android.hardware.radio.deprecated@1.0.vendor \
-    android.hardware.secure_element@1.0 \
-    android.hardware.secure_element@1.0.vendor \
+    android.hardware.radio@1.5 \
+    android.hardware.radio.config@1.2 \
+    android.hardware.secure_element@1.2 \
     rild \
+    libavservices_minijail.vendor \
     librmnetctl \
     libprotobuf-cpp-full
 
