@@ -16,6 +16,7 @@ TARGET_NO_BOOTLOADER := true
 
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
+TARGET_ENFORCES_QSSI := true
 
 # Architecture
 TARGET_ARCH := arm64
