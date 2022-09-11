@@ -27,10 +27,6 @@ $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
-# Soong namespaces
-PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
-
 # Permissions
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/system_ext-privapp-permissions-qti.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-qti.xml
@@ -418,6 +414,11 @@ PRODUCT_PACKAGES += \
 # Sensor HAL conf file
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
+
+# Soong namespaces
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH) \
+    hardware/xiaomi
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
