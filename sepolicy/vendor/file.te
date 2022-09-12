@@ -30,3 +30,11 @@ type sysfs_touchscreen, sysfs_type, fs_type;
 
 # Remote storage
 type debugfs_rmts, debugfs_type, fs_type;
+
+# debugfs
+type debugfs_sched_features, debugfs_type, fs_type;
+type debugfs_wlan, debugfs_type, fs_type;
+type proc_sysctl_schedboost, proc_type, fs_type;
+type sysfs_msm_subsys, sysfs_type, fs_type;
+type sysfs_rpm, sysfs_type, fs_type;
+type sysfs_system_sleep_stats, sysfs_type, fs_type;
