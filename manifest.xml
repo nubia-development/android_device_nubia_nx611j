@@ -99,6 +99,11 @@
         <fqname>@1.0::IVibrator/default</fqname>
     </hal>
     <hal format="hidl">
+        <name>com.dsi.ant</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAnt/default</fqname>
+    </hal>
+    <hal format="hidl">
         <name>com.fingerprints.extension</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IFingerprintAuthenticator/default</fqname>
@@ -108,11 +113,6 @@
         <fqname>@1.0::IFingerprintRecalibration/default</fqname>
         <fqname>@1.0::IFingerprintSenseTouch/default</fqname>
         <fqname>@1.0::IFingerprintSensorTest/default</fqname>
-    </hal>
-    <hal format="hidl">
-        <name>com.qualcomm.qti.ant</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.0::IAntHci/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
@@ -194,7 +194,7 @@
     <hal format="hidl">
         <name>vendor.qti.hardware.btconfigstore</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0::IBTConfigStore/default</fqname>
+        <fqname>@2.0::IBTConfigStore/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.hardware.cacert</name>
