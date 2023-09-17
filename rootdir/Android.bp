@@ -31,8 +31,8 @@ sh_binary {
 
 // Init configuration files
 prebuilt_etc {
-    name: "init.fingerprint.rc",
-    src: "etc/init.fingerprint.rc",
+    name: "init.nb.sensor.rc",
+    src: "etc/init.nb.sensor.rc",
     sub_dir: "init/hw",
     vendor: true,
 }

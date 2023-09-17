@@ -56,25 +56,26 @@ fi
 function blob_fixup() {
     case "${1}" in
         vendor/lib/hw/camera.sdm660.so)
-              "${PATCHELF}" --add-needed "libcamera_sdm660_shim.so" "${2}"
+            "${PATCHELF}" --add-needed "libcamera_sdm660_shim.so" "${2}"
          ;;
         vendor/lib/libNubiaImageAlgorithm.so)
-              "${PATCHELF}" --add-needed "libNubiaImageAlgorithmShim.so" "${2}"
-              "${PATCHELF}" --remove-needed "libjnigraphics.so" "${2}"
-              "${PATCHELF}" --remove-needed "libnativehelper.so" "${2}"
+            "${PATCHELF}" --add-needed "libNubiaImageAlgorithmShim.so" "${2}"
+            "${PATCHELF}" --remove-needed "libjnigraphics.so" "${2}"
+            "${PATCHELF}" --remove-needed "libnativehelper.so" "${2}"
+            "${PATCHELF}" --add-needed "libui_shim.so" "${2}"
         ;;
         vendor/lib/libmmcamera_ppeiscore.so|vendor/lib/libmmcamera_bokeh.so|vendor/lib/libnubia_effect.so|vendor/lib64/libnubia_effect.so|vendor/lib64/libnubia_media_player.so)
-              "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
+            "${PATCHELF}" --remove-needed "libandroid.so" "${2}"
          ;;
         vendor/lib64/libnubia_media_player.so)
-              "${PATCHELF}" --remove-needed "libandroid_runtime.so" "${2}"
+            "${PATCHELF}" --remove-needed "libandroid_runtime.so" "${2}"
          ;;
         vendor/lib/libmmcamera_ppeiscore.so|vendor/lib/libmmcamera_bokeh.so|vendor/lib/libnubia_effect.so|vendor/lib64/libnubia_effect.so|vendor/lib64/libnubia_media_player.so)
-              sed -i "s|libgui.so|libfui.so|g" "${2}"
+            "${PATCHELF}" --remove-needed "libgui.so" "${2}"
          ;;
         vendor/lib64/hw/fingerprint.sdm660.so)
-              "${PATCHELF}" --replace-needed "libunwind.so" "libunwind-vendor.so" "${2}"
-              "${PATCHELF}" --replace-needed "libbacktrace.so" "libbacktrace-vendor.so" "${2}"
+            "${PATCHELF}" --remove-needed "libunwind.so" "${2}"
+            "${PATCHELF}" --remove-needed "libbacktrace.so" "${2}"
          ;;
     esac
 }
