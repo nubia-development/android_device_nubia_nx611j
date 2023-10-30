@@ -6,6 +6,8 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/non_ab_device.mk)
 
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
