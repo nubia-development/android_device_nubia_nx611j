@@ -75,11 +75,6 @@
         <fqname>@1.4::IRadio/slot2</fqname>
     </hal>
     <hal format="hidl">
-        <name>android.hardware.radio.config</name>
-        <transport>hwbinder</transport>
-        <fqname>@1.1::IRadioConfig/default</fqname>
-    </hal>
-    <hal format="hidl">
         <name>android.hardware.sensors</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::ISensors/default</fqname>
@@ -313,5 +308,10 @@
         <name>vendor.qti.imsrtpservice</name>
         <transport>hwbinder</transport>
         <fqname>@2.1::IRTPService/imsrtpservice</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>lineage.hardware.radio.config</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IRadioConfig/default</fqname>
     </hal>
 </manifest>

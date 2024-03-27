@@ -374,6 +374,10 @@ PRODUCT_PACKAGES += \
     libprotobuf-cpp-full
 
 PRODUCT_PACKAGES += \
+    android.hardware.radio.c_shim@1.0 \
+    android.hardware.radio.c_shim@1.1 \
+    android.hardware.radio.c_shim@1.2 \
+    android.hardware.radio.config@1.1-service.wrapper \
     ims-ext-common \
     ims_ext_common.xml \
     libgui_shim \
