@@ -46,13 +46,6 @@ $(DSP_MOUNT_POINT):
 
 ALL_DEFAULT_INSTALLED_MODULES += $(FIRMWARE_MOUNT_POINT) $(BT_FIRMWARE_MOUNT_POINT) $(DSP_MOUNT_POINT)
 
-EGL_SYMLINK := $(TARGET_OUT_VENDOR)/lib/libGLESv2_adreno.so
-$(EGL_SYMLINK): $(LOCAL_INSTALLED_MODULE)
-	@mkdir -p $(dir $@)
-	$(hide) ln -sf egl/$(notdir $@) $@
-
-ALL_DEFAULT_INSTALLED_MODULES += $(EGL_SYMLINK)
-
 SW_FP_IMAGES := \
     sw_fp.b00 sw_fp.b01 sw_fp.b02 sw_fp.b03 sw_fp.b04 sw_fp.b05 sw_fp.b06 sw_fp.mdt
 
