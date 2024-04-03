@@ -1,6 +1,9 @@
 # Audio
 sys.listeners.registered                u:object_r:vendor_tee_listener_prop:s0
 
+# Bluetooth
+persist.vendor.bt.address                                     u:object_r:vendor_bluetooth_prop:s0
+
 # Camera
 persist.camera.                         u:object_r:camera_prop:s0
 persist.capture.                        u:object_r:camera_prop:s0

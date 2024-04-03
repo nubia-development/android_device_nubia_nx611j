@@ -116,9 +116,9 @@
         <fqname>@1.0::IFingerprintSensorTest/default</fqname>
     </hal>
     <hal format="hidl">
-        <name>com.qualcomm.qti.ant</name>
+        <name>com.dsi.ant</name>
         <transport>hwbinder</transport>
-        <fqname>@1.0::IAntHci/default</fqname>
+        <fqname>@1.0::IAnt/default</fqname>
     </hal>
     <hal format="hidl">
         <name>com.qualcomm.qti.dpm.api</name>
@@ -133,7 +133,7 @@
     <hal format="hidl">
         <name>com.qualcomm.qti.uceservice</name>
         <transport>hwbinder</transport>
-        <fqname>@2.1::IUceService/com.qualcomm.qti.uceservice</fqname>
+        <fqname>@2.3::IUceService/com.qualcomm.qti.uceservice</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.display.color</name>
@@ -303,6 +303,11 @@
         <name>vendor.qti.ims.callinfo</name>
         <transport>hwbinder</transport>
         <fqname>@1.0::IService/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.ims.factory</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IImsFactory/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.qti.imsrtpservice</name>
