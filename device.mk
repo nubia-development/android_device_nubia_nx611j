@@ -155,6 +155,7 @@ PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-service \
     android.hardware.camera.provider@2.6:64 \
     libdng_sdk.vendor \
+    libpng.vendor:32 \
     vendor.qti.hardware.camera.device@1.0:64 \
     libNubiaImageAlgorithmShim \
     libui_shim.vendor_32
@@ -249,6 +250,7 @@ PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
     android.hidl.base@1.0.vendor \
     android.hidl.memory@1.0.vendor \
+    libhidlmemory.vendor:64 \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -374,8 +376,11 @@ PRODUCT_PACKAGES += \
     android.hardware.secure_element@1.2.vendor \
     rild \
     libavservices_minijail.vendor \
+    libnetutils.vendor \
+    libprotobuf-cpp-full \
     librmnetctl \
-    libprotobuf-cpp-full
+    libsqlite.vendor:64
+
 
 PRODUCT_PACKAGES += \
     android.hardware.radio.c_shim@1.0 \
@@ -385,6 +390,7 @@ PRODUCT_PACKAGES += \
     ims-ext-common \
     ims_ext_common.xml \
     libgui_shim \
+    libion.vendor \
     qti-telephony-hidl-wrapper \
     qti_telephony_hidl_wrapper.xml \
     qti-telephony-utils \
@@ -405,7 +411,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl:64 \
     android.hardware.sensors@1.0-service \
-    libsensorndkbridge
+    libsensorndkbridge \
+    libpower.vendor
 
 # Tetheroffload
 PRODUCT_PACKAGES += \
