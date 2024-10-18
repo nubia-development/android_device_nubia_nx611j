@@ -33,10 +33,10 @@ PRODUCT_MODEL := Nubia Z18 Mini
 
 PRODUCT_GMS_CLIENTID_BASE := android-nubia
 
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="nx611j" \
-    PRODUCT_NAME="nx611j" \
-    BUILD_FINGERPRINT="nubia/NX611J/NX611J:8.1.0/OPM1.171019.011/nubia.20200618.184338:user/release-keys" \
-    PRIVATE_BUILD_DESC="NX611J-user 8.1.0 OPM1.171019.011 eng.nubia.20200618.184338 release-keys"
-
 TARGET_VENDOR := nubia
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    BuildDesc="NX611J-user 8.1.0 OPM1.171019.011 eng.nubia.20200618.184338 release-keys" \
+    BuildFingerprint=nubia/NX611J/NX611J:8.1.0/OPM1.171019.011/nubia.20200618.184338:user/release-keys \
+    DeviceName=NX611J \
+    DeviceProduct=NX611J
