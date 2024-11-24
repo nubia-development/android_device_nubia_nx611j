@@ -298,7 +298,7 @@ PRODUCT_PACKAGES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-   android.hardware.light@2.0-service.nx611j
+   android.hardware.light-service.nx611j
 
 # Lineage Health
 PRODUCT_PACKAGES += \
