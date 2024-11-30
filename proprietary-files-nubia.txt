@@ -432,30 +432,19 @@ vendor/lib64/libkeymasterutils.so
 vendor/lib/hw/keystore.sdm660.so
 vendor/lib64/hw/keystore.sdm660.so
 
-# Sensors -from asus x01BD
-vendor/bin/sensors.qti|f7bc782de932f6b53ac3a2f5023de56e202f19d7
-vendor/etc/sensors/sensor_def_qcomdev.conf|c673951d430942a2e27f880da5afe6c34bbcfb71
-vendor/lib/libsensor1.so|844229f98527e40f7c4a739566c351dba878bffd
-vendor/lib/libsensor_reg.so|50f201af793aba58ce63f85c3a021bf57cf86b3c
-vendor/lib/sensors.native.so|5a9848cd2eb4065275fd7fcf3fa08a0aa3247859
-vendor/lib64/libsensor1.so|44e7a290b808225e5e3d78f3672c7cdd27e6fa9e
-vendor/lib64/libsensor_reg.so|01d08c542f7beaa253337ec22caddec928a5bf29
-vendor/lib64/sensors.native.so|e6f84a8909d2e6a812f07c9853c4b7282eec80aa
-
-# Sensors (light & proximity) -from nx611j stock
-vendor/lib/sensors.ssc.so|304cb65220d482f75075d3e4bd838bfaa400e710
-vendor/lib64/sensors.oem.so|ccc498f4416f677bf58c41e0f99d8f7bc6f2ef53
-vendor/lib64/sensors.ssc.so|28b128c63d239d5e9be0ed4e853b9ad7ef204fbf
-
-# Sensors calibration -from asus x01BD
-framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar:vendor/framework/vendor.qti.hardware.sensorscalibrate-V1.0-java.jar|4b187952761a10c8f023da18c2b808036ccfc11a
-vendor/etc/calmodule.cfg|35ca480b8b6d088dad04f424ac59e8b14b55c814
-vendor/lib/libcalmodule_common.so|d3c4503ce8c77373e30874ceb95f525da13c126f
-vendor/lib/sensor_calibrate.so|0c2d2b019f0e08685ad77a16b5391259bf128a05
-vendor/lib/vendor.qti.hardware.sensorscalibrate@1.0.so|af3ae6fc597e5fa123c3a2b839e7fa85c3a636be
-vendor/lib64/libcalmodule_common.so|cec7d07c15a095d7aa11f2c66065cfb683555926
-vendor/lib64/sensor_calibrate.so|0b419f7b24c2d6bc8ed6ff66fb6374ba838971d5
-vendor/lib64/vendor.qti.hardware.sensorscalibrate@1.0.so|cee30a3b09c02587b55ffe6c04e96aabfe9f918e
+# Sensors - from NX563J - PKQ1.181021.001 factory image
+vendor/bin/sensors.qti|dad3755f2c7b4c1478f1fa89980efac3ae3e682a
+vendor/etc/sensors/hals.conf|a96389b6739f730ab852414c009570e54c9ae52c
+vendor/etc/sensors/sensor_def_qcomdev.conf|0399e58da48fe9cb656fa1f4828cf598f1aa765d
+vendor/lib/libsensor1.so|2daa4ce78cf3ac954096b3117ff07fbd0563674a
+vendor/lib/libsensor_reg.so|fb4ef42d0e6d6ecbcf91914606ced260e2f8da89
+vendor/lib/libsns_low_lat_stream_stub.so|16828431f8af68a6abb268605ed61799af1d8279
+vendor/lib/sensors.ssc.so|e860776068f9fe4db62b740226b1ace06335202b
+vendor/lib64/libsensor1.so|f18011ed56676250af06299bad3069724c7cb71b
+vendor/lib64/libsensor_reg.so|5139c88ff43b9a9441194a4b8aabf068e2f80257
+vendor/lib64/libsns_low_lat_stream_stub.so|326637595214dd00c8ed09b57eeee11988269a86
+vendor/lib64/sensors.oem.so|e78c88520b96aea7caa09b86b675a9ede43acb86
+vendor/lib64/sensors.ssc.so|10cc41965476dfc61eaf8808d240e79045e094ae
 
 # Signed graphics firmware
 vendor/firmware/a508_zap.b00
