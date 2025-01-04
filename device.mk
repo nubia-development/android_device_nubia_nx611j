@@ -333,11 +333,6 @@ PRODUCT_PACKAGES += \
     libhypv_intercept \
     libmm-omxcore \
     libOmxCore \
-    libOmxAacEnc \
-    libOmxAmrEnc \
-    libOmxEvrcEnc \
-    libOmxG711Enc \
-    libOmxQcelp13Enc \
     libOmxVdec \
     libOmxVenc \
     libstagefrighthw
