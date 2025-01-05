@@ -18,6 +18,9 @@ TARGET_NO_BOOTLOADER := true
 # Platform
 TARGET_BOARD_PLATFORM := sdm660
 
+# A/B
+AB_OTA_UPDATER := false
+
 # Architecture
 TARGET_ARCH := arm64
 TARGET_ARCH_VARIANT := armv8-a
